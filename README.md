@@ -29,6 +29,28 @@ Then run the app:
 
 You should see a shaded cube.
 
+## Develop
+
+This is a CMake project, so open the **folder** (not a `.sln`) — CMake stays the
+source of truth. When you add a new `.cpp`, list it in the relevant
+`CMakeLists.txt`; new `.h` files need no change.
+
+### Visual Studio (2022 / 2026)
+
+1. **File → Open → Folder…** and pick the repo root.
+2. Wait for the "CMake generation" in the Output window to finish.
+3. Set the startup item dropdown in the toolbar to **`runtime.exe`**.
+4. Press **F5** (debug) or **Ctrl+F5** (run). Set breakpoints in the gutter.
+
+### VS Code
+
+1. Install the **C/C++** and **CMake Tools** extensions (both by Microsoft).
+2. **File → Open Folder…** and pick the repo root.
+3. When prompted, select a **Kit** (your Visual Studio / Clang / GCC compiler).
+4. Build with **F7**, then run/debug with the ▶ / 🐞 buttons in the status bar.
+
+Both editors re-run CMake automatically when you save a `CMakeLists.txt`.
+
 ## Controls
 
 | Key            | Action        |
