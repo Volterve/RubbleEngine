@@ -1,6 +1,6 @@
 # runtime — a minimal GLFW app that drives EngineCore. This is where the window
 # and OpenGL context are created; the engine itself stays windowing-agnostic.
-add_executable(runtime src/main.cpp)
+add_executable(runtime src/main.cpp "src/Window.h" "src/Window.cpp")
 
 target_link_libraries(runtime PRIVATE EngineCore glfw)
 if(WIN32)

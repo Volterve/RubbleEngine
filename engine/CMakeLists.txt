@@ -5,6 +5,8 @@
 # from the GLFW runtime today and from a Qt-based level editor later.
 add_library(EngineCore STATIC
     src/gfx/Shader.cpp
+    src/project/Level.cpp
+    src/project/Project.cpp
 )
 
 target_include_directories(EngineCore PUBLIC src)
